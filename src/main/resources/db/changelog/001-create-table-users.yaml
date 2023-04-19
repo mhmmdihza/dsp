@@ -1,0 +1,19 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-users-table
+      author: satria
+      changes:
+        - createTable:
+            tableName: users
+            columns:
+              - column:
+                  name: phone_number
+                  type: varchar(255)
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: name
+                  type: varchar(255)
+              - column:
+                  name: password
+                  type: varchar(255)
